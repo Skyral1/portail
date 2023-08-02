@@ -57,7 +57,7 @@ if (!isset($_SESSION['username'])) {
         echo '<li class="ui-state-default" data-order="' . $row['ordre_apparition'] . '">' . $row['titre'] . ' - ' . $row['url'] . '<input type="hidden" name="site_order[' . $row['id'] . ']" value="' . $row['ordre_apparition'] . '"></li>';
     }
     echo '</ol>';
-    echo '<button type="submit" name="update_order">Mettre à jour l\'ordre</button>';
+    echo '<button class="button" type="submit" name="update_order">Mettre à jour l\'ordre</button>';
     echo '</form>';
 
     // Fermer la connexion à la base de données
@@ -65,12 +65,12 @@ if (!isset($_SESSION['username'])) {
     ?>
 
     <!-- Bouton pour ajouter un nouveau site -->
-    <a class="button_1" href="new-site.php">Ajouter un site</a>
+    <a class="button" href="new-site.php">Ajouter un site</a>
     <!-- Bouton pour retirer un site -->
-    <a class="button_1" href="delete.php">Retirer un site</a>
+    <a class="button" href="delete.php">Retirer un site</a>
 
     <br><br>
-    <a href="../">Retourner à la page d'accueil</a>
+    <a class="button button_return" href="../">Retourner à la page d'accueil</a>
 
     <!-- Chargement de la bibliothèque jQuery et jQuery UI -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
